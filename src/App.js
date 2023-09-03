@@ -8,10 +8,10 @@ import "./Componenents/Header/style.css";
 
 function App(props) {
 
-  const [position,setposition]=useState()
-  const [taskk,settaskk]=useState('')
-  const [listchecked, setlist] = useState([]);
-  const [list, setlistt] = useState([]);
+  const [position,setposition]=useState() //position of the task
+  const [taskk,settaskk]=useState('') //the task in the input
+  const [listchecked, setlist] = useState([]); //the task checked done by user
+  const [list, setlistt] = useState([]); 
   const [day, setdayy] = useState(current());
   function current() {
     const weekday = [

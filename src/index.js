@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const d=new Date()
 const hr=d.getHours()
+// to display message to user like good morning, good evening with a simple toast uploaded by npm website
     if (hr>=4 && hr<12) {
       toast.success('👌😎 Good morning', {
     position: "top-left",
@@ -48,6 +49,7 @@ const hr=d.getHours()
         theme: "light", })
     }
 var a=true
+// to set the body of page with or not blur if the user click in the chrono button
 function changebody() {
   if (a) {
     document.getElementById("app").style.filter=' blur(10px) ';
@@ -63,6 +65,7 @@ function changebody() {
     a=true
   }
  }
+//called in changebody function
 function change() {
   document.getElementById("app").style.filter=' blur(0px) '
 }
