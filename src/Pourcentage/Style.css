@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.boxx{
+    position: absolute;
+    left: -30px;
+    top: 80px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(235,242,255,255);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    border-radius:30px ;
+}
+.boxx .pourcentage
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.boxx .pourcentage svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.boxx .pourcentage svg circle
+{
+    width: 130px;
+    height: 130px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap:round ;
+}
+.boxx .pourcentage svg circle:nth-child(1)
+{
+    stroke-dashoffset: 0;
+    stroke: rgba(156,164,205,255);
+}
+.boxx .pourcentage svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - (440 * 0) / 100);
+    stroke: #03a9f4;
+    transition: 2s;
+}
+.boxx .pourcentage .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(35, 30, 30);
+}
+.boxx .pourcentage .number h2{
+    font-size: 48px;
+}
+.boxx .pourcentage .number h2 span{
+    font-size: 24px;
+}
+.boxx .text{
+    padding: 80px 0 0;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

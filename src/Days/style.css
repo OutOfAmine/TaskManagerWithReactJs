@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    left: 50px;
+    top: 70px;
+    border-bottom: 10px solid rgba(78,145,254,255);
+    border-radius: 10px;
+}
+.box h2
+{
+    color: white;
+    background: rgba(78,145,254,255);
+    /*  */
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+.box ul li
+{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+.box ul:hover li
+{
+    opacity: 0.2;
+}
+.box ul li:hover
+{
+    transform: scale(1.1);
+    z-index: 100;
+    background:rgba(78,145,254,255);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 1;
+}
+.box ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(78,145,254,255);
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+    transform: translateX(-6px);
+}
+.box ul li:hover span{
+    background: #fff;
+    color: black;
+}
+.all{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    background: rgba(235,242,255,255);
+    position: relative;
+    left: -500px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.class{
+    transform: scale(1.1);
+    z-index: 100;
+    background:rgba(78,145,254,255);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 1;
+}
